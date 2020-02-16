@@ -1,6 +1,9 @@
 # Energy Racer
-## Abgabe Energie Bezirk Freistadt (Stand: 16.02.2020)
+## Abgabe Energie Bezirk Freistadt 
 
-Source Code, Version 1.1 /
+(Stand: 16.02.2020)
+
+## Details
+Source Code Version 1.1\
 App verfügbar im Google Play Store unter "Energy Racer"
 
