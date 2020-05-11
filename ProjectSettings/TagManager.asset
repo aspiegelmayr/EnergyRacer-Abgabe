@@ -51,8 +51,6 @@ TagManager:
   - Blue
   - Green
   - CoatOfArms
-  - DistrictPanel
-  - Content
   layers:
   - Default
   - TransparentFX
@@ -90,6 +88,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4047688135
+    locked: 0
   - name: UI
     uniqueID: 517688821
+    locked: 0
+  - name: Foreground
+    uniqueID: 3424335299
     locked: 0
