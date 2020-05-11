@@ -1,0 +1,25 @@
+var annotated_dup =
+[
+    [ "BackgroundTile", "class_background_tile.html", null ],
+    [ "Board", "class_board.html", "class_board" ],
+    [ "Car", "class_car.html", "class_car" ],
+    [ "carShop", "classcar_shop.html", "classcar_shop" ],
+    [ "CoatOfArmsArray", "class_coat_of_arms_array.html", "class_coat_of_arms_array" ],
+    [ "District", "class_district.html", "class_district" ],
+    [ "DistrictSelection", "class_district_selection.html", "class_district_selection" ],
+    [ "FindMatches", "class_find_matches.html", "class_find_matches" ],
+    [ "GameWon", "class_game_won.html", "class_game_won" ],
+    [ "LeaderboardManager", "class_leaderboard_manager.html", "class_leaderboard_manager" ],
+    [ "LevelSelection", "class_level_selection.html", "class_level_selection" ],
+    [ "LocationService", "class_location_service.html", "class_location_service" ],
+    [ "Match", "class_match.html", "class_match" ],
+    [ "Matchmaking", "class_matchmaking.html", "class_matchmaking" ],
+    [ "MultiplayerMenu", "class_multiplayer_menu.html", "class_multiplayer_menu" ],
+    [ "MultiplayerWin", "class_multiplayer_win.html", "class_multiplayer_win" ],
+    [ "PinchableScrollRect", "class_pinchable_scroll_rect.html", "class_pinchable_scroll_rect" ],
+    [ "SceneSwitch", "class_scene_switch.html", "class_scene_switch" ],
+    [ "StartGame", "class_start_game.html", "class_start_game" ],
+    [ "Upgrade", "class_upgrade.html", "class_upgrade" ],
+    [ "UserData", "class_user_data.html", "class_user_data" ],
+    [ "WinScene", "class_win_scene.html", "class_win_scene" ]
+];

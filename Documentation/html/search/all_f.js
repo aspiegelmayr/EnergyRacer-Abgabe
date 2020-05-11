@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['sceneswitch_142',['SceneSwitch',['../class_scene_switch.html',1,'']]],
+  ['score_143',['score',['../class_leaderboard_manager.html#a52ee543c395924816fce9dddc106490b',1,'LeaderboardManager.score()'],['../class_user_data.html#a32358fba5b0e91d939f82608f1dbff80',1,'UserData.score()']]],
+  ['scoretext_144',['scoreText',['../class_leaderboard_manager.html#a3ebf778e7f9d8657fe9adf372e0eac90',1,'LeaderboardManager']]],
+  ['scrollrect_145',['scrollRect',['../class_district_selection.html#a574aca97945cfe03cb43e023524cb375',1,'DistrictSelection']]],
+  ['searchformatch_146',['SearchForMatch',['../class_matchmaking.html#a4adfbad771b08159f43aff91e4b5aaa9',1,'Matchmaking']]],
+  ['selectdistricttag_147',['SelectDistrictTag',['../class_district_selection.html#a3bc2701a200572a350c40ffc88885e2f',1,'DistrictSelection']]],
+  ['selected_148',['selected',['../class_multiplayer_menu.html#a794e83ca7698afdc9953e040b74051a7',1,'MultiplayerMenu']]],
+  ['selectedbuttonindices_149',['selectedButtonIndices',['../class_multiplayer_menu.html#a17cf1f6e2aa5711747be0987837f50fd',1,'MultiplayerMenu']]],
+  ['sendtodatabase_150',['SendToDatabase',['../class_leaderboard_manager.html#a1b368eb681fa9367f8372b5fba008ae3',1,'LeaderboardManager']]],
+  ['sendweatherrequest_151',['SendWeatherRequest',['../class_location_service.html#af2e5c29dd6af65c72c66bdb2ab9ddc5c',1,'LocationService']]],
+  ['setcoatofarms_152',['SetCoatOfArms',['../class_level_selection.html#a47d6726a270067bf9757d28f840b427c',1,'LevelSelection']]],
+  ['setleveldifficulty_153',['SetLevelDifficulty',['../class_location_service.html#a5a3efa9a08527b833003f7bc6991ffe1',1,'LocationService']]],
+  ['setneededscore_154',['SetNeededScore',['../class_location_service.html#afa628c6d4bdcd83b7b8c945f4fdb1aa9',1,'LocationService']]],
+  ['setup_155',['Setup',['../class_board.html#aff41b3db8a337f7ab43393c7e5e5ddc8',1,'Board']]],
+  ['setupboard_156',['SetUpBoard',['../class_location_service.html#a69335087ca053e0e3a90a8e85d2a2bf0',1,'LocationService']]],
+  ['showpanel_157',['ShowPanel',['../class_start_game.html#af59bd909f8eef3f4be24e632f1d23fdc',1,'StartGame']]],
+  ['slider_158',['slider',['../class_board.html#a923cd13ce802bbc2dd97ec247a0636fc',1,'Board']]],
+  ['startgame_159',['StartGame',['../class_start_game.html',1,'']]],
+  ['startingmoves_160',['startingMoves',['../class_board.html#a629f9962d3570fbf79b689fc99190880',1,'Board']]],
+  ['submitbtn_161',['submitBtn',['../class_leaderboard_manager.html#a1f9833c367716778758cdd5a4331c34a',1,'LeaderboardManager']]]
+];

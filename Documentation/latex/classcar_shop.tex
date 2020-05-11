@@ -1,0 +1,172 @@
+\hypertarget{classcar_shop}{}\doxysection{car\+Shop Class Reference}
+\label{classcar_shop}\index{carShop@{carShop}}
+
+
+manages the car shop scene  
+
+
+Inheritance diagram for car\+Shop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcar_shop}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcar_shop_a15cacf4762b8d4a8f3e8eec415f1e695}{Toggle\+Panel}} (bool active)
+\begin{DoxyCompactList}\small\item\em toggles the confirm dialog when buying a car \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcar_shop_a160207ae8ca7a5a368365e4b34e4c44c}{Buy\+Item}} ()
+\begin{DoxyCompactList}\small\item\em lets the user buy the selected item \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_car}{Car}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcar_shop_a0f507ee889104b92a3407e6a0beb5991}{cars}}
+\begin{DoxyCompactList}\small\item\em an array containing all cars \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_upgrade}{Upgrade}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcar_shop_ae3aeaa4abfeaddb6d935f8a603ebdbbc}{upgrades}}
+\begin{DoxyCompactList}\small\item\em an array containing all upgrades \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{classcar_shop_ac3a8dbbdb1a93528d1b8028b0bf3f2b4}{car\+Title}}
+\begin{DoxyCompactList}\small\item\em text fields containing the title for the car and upgrade section and coins \end{DoxyCompactList}\item 
+Text\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcar_shop_aa796e7e59599b37fd0c31b7e37598ea3}{car\+Names}}
+\begin{DoxyCompactList}\small\item\em an array of text fields containing all cars\textquotesingle{} and upgrades\textquotesingle{} names and costs \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{classcar_shop_a063044bf09e01266446029ac3fc7b679}{in\+Use\+Txt}}
+\begin{DoxyCompactList}\small\item\em text fields telling the user if the item is already in use, warning the user about insufficient money, and displaying the items\textquotesingle{} names and costs \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{classcar_shop_a05d3a58a248c5d7bd5d9e7cd03f9cfc8}{confirm\+Panel}}
+\begin{DoxyCompactList}\small\item\em the panels for confirming a transaction and for displaying the item\textquotesingle{}s info \end{DoxyCompactList}\item 
+Button\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcar_shop_a89ed49cea45700d4148012226232cf26}{car\+Btns}}
+\begin{DoxyCompactList}\small\item\em arrays containing all car and upgrade buttons \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{classcar_shop_a99874ac4fca58bf9093c645a76b35d5c}{buy\+Txt}}
+\begin{DoxyCompactList}\small\item\em the text field asking the player if he wants to buy/activate an item \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{classcar_shop_aae198a25a5090dccf3677c5bc89e39ca}{info\+Txt}}
+\begin{DoxyCompactList}\small\item\em the text field displaying an item\textquotesingle{}s info \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+manages the car shop scene 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcar_shop_a160207ae8ca7a5a368365e4b34e4c44c}\label{classcar_shop_a160207ae8ca7a5a368365e4b34e4c44c}} 
+\index{carShop@{carShop}!BuyItem@{BuyItem}}
+\index{BuyItem@{BuyItem}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{BuyItem()}{BuyItem()}}
+{\footnotesize\ttfamily void car\+Shop.\+Buy\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+lets the user buy the selected item 
+
+\mbox{\Hypertarget{classcar_shop_a15cacf4762b8d4a8f3e8eec415f1e695}\label{classcar_shop_a15cacf4762b8d4a8f3e8eec415f1e695}} 
+\index{carShop@{carShop}!TogglePanel@{TogglePanel}}
+\index{TogglePanel@{TogglePanel}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{TogglePanel()}{TogglePanel()}}
+{\footnotesize\ttfamily void car\+Shop.\+Toggle\+Panel (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})}
+
+
+
+toggles the confirm dialog when buying a car 
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcar_shop_a99874ac4fca58bf9093c645a76b35d5c}\label{classcar_shop_a99874ac4fca58bf9093c645a76b35d5c}} 
+\index{carShop@{carShop}!buyTxt@{buyTxt}}
+\index{buyTxt@{buyTxt}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{buyTxt}{buyTxt}}
+{\footnotesize\ttfamily Text car\+Shop.\+buy\+Txt}
+
+
+
+the text field asking the player if he wants to buy/activate an item 
+
+\mbox{\Hypertarget{classcar_shop_a89ed49cea45700d4148012226232cf26}\label{classcar_shop_a89ed49cea45700d4148012226232cf26}} 
+\index{carShop@{carShop}!carBtns@{carBtns}}
+\index{carBtns@{carBtns}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{carBtns}{carBtns}}
+{\footnotesize\ttfamily Button \mbox{[}$\,$\mbox{]} car\+Shop.\+car\+Btns}
+
+
+
+arrays containing all car and upgrade buttons 
+
+\mbox{\Hypertarget{classcar_shop_aa796e7e59599b37fd0c31b7e37598ea3}\label{classcar_shop_aa796e7e59599b37fd0c31b7e37598ea3}} 
+\index{carShop@{carShop}!carNames@{carNames}}
+\index{carNames@{carNames}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{carNames}{carNames}}
+{\footnotesize\ttfamily Text \mbox{[}$\,$\mbox{]} car\+Shop.\+car\+Names}
+
+
+
+an array of text fields containing all cars\textquotesingle{} and upgrades\textquotesingle{} names and costs 
+
+\mbox{\Hypertarget{classcar_shop_a0f507ee889104b92a3407e6a0beb5991}\label{classcar_shop_a0f507ee889104b92a3407e6a0beb5991}} 
+\index{carShop@{carShop}!cars@{cars}}
+\index{cars@{cars}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{cars}{cars}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car}{Car}} \mbox{[}$\,$\mbox{]} car\+Shop.\+cars}
+
+
+
+an array containing all cars 
+
+\mbox{\Hypertarget{classcar_shop_ac3a8dbbdb1a93528d1b8028b0bf3f2b4}\label{classcar_shop_ac3a8dbbdb1a93528d1b8028b0bf3f2b4}} 
+\index{carShop@{carShop}!carTitle@{carTitle}}
+\index{carTitle@{carTitle}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{carTitle}{carTitle}}
+{\footnotesize\ttfamily Text car\+Shop.\+car\+Title}
+
+
+
+text fields containing the title for the car and upgrade section and coins 
+
+\mbox{\Hypertarget{classcar_shop_a05d3a58a248c5d7bd5d9e7cd03f9cfc8}\label{classcar_shop_a05d3a58a248c5d7bd5d9e7cd03f9cfc8}} 
+\index{carShop@{carShop}!confirmPanel@{confirmPanel}}
+\index{confirmPanel@{confirmPanel}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{confirmPanel}{confirmPanel}}
+{\footnotesize\ttfamily Game\+Object car\+Shop.\+confirm\+Panel}
+
+
+
+the panels for confirming a transaction and for displaying the item\textquotesingle{}s info 
+
+\mbox{\Hypertarget{classcar_shop_aae198a25a5090dccf3677c5bc89e39ca}\label{classcar_shop_aae198a25a5090dccf3677c5bc89e39ca}} 
+\index{carShop@{carShop}!infoTxt@{infoTxt}}
+\index{infoTxt@{infoTxt}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{infoTxt}{infoTxt}}
+{\footnotesize\ttfamily Text car\+Shop.\+info\+Txt}
+
+
+
+the text field displaying an item\textquotesingle{}s info 
+
+\mbox{\Hypertarget{classcar_shop_a063044bf09e01266446029ac3fc7b679}\label{classcar_shop_a063044bf09e01266446029ac3fc7b679}} 
+\index{carShop@{carShop}!inUseTxt@{inUseTxt}}
+\index{inUseTxt@{inUseTxt}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{inUseTxt}{inUseTxt}}
+{\footnotesize\ttfamily Text car\+Shop.\+in\+Use\+Txt}
+
+
+
+text fields telling the user if the item is already in use, warning the user about insufficient money, and displaying the items\textquotesingle{} names and costs 
+
+\mbox{\Hypertarget{classcar_shop_ae3aeaa4abfeaddb6d935f8a603ebdbbc}\label{classcar_shop_ae3aeaa4abfeaddb6d935f8a603ebdbbc}} 
+\index{carShop@{carShop}!upgrades@{upgrades}}
+\index{upgrades@{upgrades}!carShop@{carShop}}
+\doxysubsubsection{\texorpdfstring{upgrades}{upgrades}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_upgrade}{Upgrade}} \mbox{[}$\,$\mbox{]} car\+Shop.\+upgrades}
+
+
+
+an array containing all upgrades 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anna/\+Desktop/\+Energy-\/\+Racer-\/google\+Play/\+Assets/\+Scripts/car\+Shop.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['gameover_60',['gameOver',['../class_board.html#a167e053f7578bce0206af1677c758bdf',1,'Board']]],
+  ['gamewon_61',['GameWon',['../class_game_won.html',1,'GameWon'],['../class_board.html#ad841ef860dbf437d388c85966f4d9ec1',1,'Board.gameWon()']]],
+  ['getarray_62',['getArray',['../class_coat_of_arms_array.html#a475252d6138fef71b187806bfee91d45',1,'CoatOfArmsArray']]],
+  ['getcoatofarms_63',['GetCoatOfArms',['../class_coat_of_arms_array.html#aad5ac67bc270ee2e754b02ed14f54b04',1,'CoatOfArmsArray']]],
+  ['getdailytotal_64',['GetDailyTotal',['../class_location_service.html#a048e4f71066ccc5b866801fd8ee79a92',1,'LocationService']]],
+  ['getleveldifficulty_65',['GetLevelDifficulty',['../class_location_service.html#a21ad501b2f4f3e2e200feb5b7984a150',1,'LocationService']]],
+  ['gotodistrictselectscene_66',['GoToDistrictSelectScene',['../class_scene_switch.html#a07c3cff09cf0964d0f5a484d2c03ee05',1,'SceneSwitch']]],
+  ['gotogameoverscene_67',['GotoGameOverScene',['../class_scene_switch.html#a4aa76f88779e7cf10fffbbbecafa7509',1,'SceneSwitch']]],
+  ['gotogamescene_68',['GotoGameScene',['../class_scene_switch.html#a1d5cab08318cbeec02f798b7ef16ffed',1,'SceneSwitch']]],
+  ['gotoleaderboard_69',['GoToLeaderboard',['../class_scene_switch.html#af462c5b26c52c75a17a326d35a4c4600',1,'SceneSwitch']]],
+  ['gotolevelselectscene_70',['GotoLevelSelectScene',['../class_scene_switch.html#a9c2404546d40103eadc575627fc0f020',1,'SceneSwitch']]],
+  ['gotomultiplayerlobby_71',['GoToMultiplayerLobby',['../class_scene_switch.html#acc1f57e9bfbabc699e504409e00abeed',1,'SceneSwitch']]],
+  ['gotomultiplayermenu_72',['GoToMultiplayerMenu',['../class_scene_switch.html#a06fb72ba12c15baed656806f4f5de770',1,'SceneSwitch']]],
+  ['gotoshopscene_73',['GoToShopScene',['../class_scene_switch.html#a7b1b5e705017dcc344daeb335cf0c02c',1,'SceneSwitch']]],
+  ['gotostartscene_74',['GoToStartScene',['../class_scene_switch.html#a28a1bfbbcf5a1eb704961b850333372b',1,'SceneSwitch']]],
+  ['gototutorial_75',['GoToTutorial',['../class_scene_switch.html#aa88d852a97810788ad2c4819a8474bda',1,'SceneSwitch']]],
+  ['gotowinscene_76',['GoToWinScene',['../class_scene_switch.html#a5d331ee3833ffdb3cc122f1e754a33b4',1,'SceneSwitch']]],
+  ['guestname_77',['guestName',['../class_match.html#ac9649d09c7c1d06300f5f461c2afbae8',1,'Match.guestName()'],['../class_matchmaking.html#a8df650906a02c0f2d75bd340645f556b',1,'Matchmaking.guestName()']]],
+  ['guestscore_78',['guestScore',['../class_match.html#a85b94451239a830479a1ec57e1adad1e',1,'Match']]]
+];

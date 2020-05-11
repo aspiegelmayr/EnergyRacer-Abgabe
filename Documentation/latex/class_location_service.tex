@@ -1,0 +1,146 @@
+\hypertarget{class_location_service}{}\doxysection{Location\+Service Class Reference}
+\label{class_location_service}\index{LocationService@{LocationService}}
+
+
+returns current location data of the device (coordinates in latitude, longitude and timestamp)  
+
+
+Inheritance diagram for Location\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_location_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_location_service_a69335087ca053e0e3a90a8e85d2a2bf0}{Set\+Up\+Board}} ()
+\begin{DoxyCompactList}\small\item\em sets up game board \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_location_service_af2e5c29dd6af65c72c66bdb2ab9ddc5c}{Send\+Weather\+Request}} ()
+\begin{DoxyCompactList}\small\item\em gets device location (coordinates) if user permitted \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_location_service_a5a3efa9a08527b833003f7bc6991ffe1}{Set\+Level\+Difficulty}} ()
+\begin{DoxyCompactList}\small\item\em chooses level difficulty according to weather data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_location_service_afa628c6d4bdcd83b7b8c945f4fdb1aa9}{Set\+Needed\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Set\+Level\+Difficulty method. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_location_service_a048e4f71066ccc5b866801fd8ee79a92}{Get\+Daily\+Total}} ()
+\begin{DoxyCompactList}\small\item\em Get\+Day\+Time\+Hours method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_location_service_a21ad501b2f4f3e2e200feb5b7984a150}\label{class_location_service_a21ad501b2f4f3e2e200feb5b7984a150}} 
+static int \mbox{\hyperlink{class_location_service_a21ad501b2f4f3e2e200feb5b7984a150}{Get\+Level\+Difficulty}} ()
+\begin{DoxyCompactList}\small\item\em Get\+Weather\+Data method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_location_service_a52f12a21a512e7019885ca372716af70}\label{class_location_service_a52f12a21a512e7019885ca372716af70}} 
+double {\bfseries L\+AT}
+\item 
+\mbox{\Hypertarget{class_location_service_a3fc0c3a75a781e7c253d097020ac8bc6}\label{class_location_service_a3fc0c3a75a781e7c253d097020ac8bc6}} 
+double {\bfseries L\+ON}
+\item 
+\mbox{\Hypertarget{class_location_service_a370463ef9f3ab83f4ca03bdb1f65a69a}\label{class_location_service_a370463ef9f3ab83f4ca03bdb1f65a69a}} 
+bool {\bfseries C\+H\+E\+C\+K\+S\+UN}
+\item 
+\mbox{\Hypertarget{class_location_service_a2f95b65a26337cd2c230fff6549bf545}\label{class_location_service_a2f95b65a26337cd2c230fff6549bf545}} 
+Date\+Time {\bfseries sunrise}
+\item 
+\mbox{\Hypertarget{class_location_service_a25cd5bac3081fa9fc4838a100185dcba}\label{class_location_service_a25cd5bac3081fa9fc4838a100185dcba}} 
+Date\+Time {\bfseries sunset}
+\item 
+\mbox{\Hypertarget{class_location_service_a79a71c1d1e175f641f05ab9a9046dcc5}\label{class_location_service_a79a71c1d1e175f641f05ab9a9046dcc5}} 
+Date\+Time {\bfseries time}
+\item 
+\mbox{\Hypertarget{class_location_service_aae625ec3ea556d077a6b7c29338fbdca}\label{class_location_service_aae625ec3ea556d077a6b7c29338fbdca}} 
+\mbox{\hyperlink{class_district}{District}}\mbox{[}$\,$\mbox{]} {\bfseries all\+Districts}
+\item 
+\mbox{\Hypertarget{class_location_service_a17497d132c4d62eb3d3a1405eb297570}\label{class_location_service_a17497d132c4d62eb3d3a1405eb297570}} 
+\mbox{\hyperlink{class_district}{District}} {\bfseries cur\+District}
+\item 
+\mbox{\Hypertarget{class_location_service_a8c05026780e07aae8b7b05e9a0e8bf73}\label{class_location_service_a8c05026780e07aae8b7b05e9a0e8bf73}} 
+int {\bfseries cur\+District\+Number}
+\item 
+\mbox{\Hypertarget{class_location_service_afc1f9f05c7bd81fbe06b290fea3a7686}\label{class_location_service_afc1f9f05c7bd81fbe06b290fea3a7686}} 
+string {\bfseries City}
+\item 
+\mbox{\Hypertarget{class_location_service_a2794192f681425f488df6a2925bc1c97}\label{class_location_service_a2794192f681425f488df6a2925bc1c97}} 
+string {\bfseries Clouds}
+\item 
+\mbox{\Hypertarget{class_location_service_a864593c6dfa057497012db100f7c35ea}\label{class_location_service_a864593c6dfa057497012db100f7c35ea}} 
+Text {\bfseries location}
+\item 
+\mbox{\Hypertarget{class_location_service_af29db9c5f1188fad2a96ff191ee9c8f2}\label{class_location_service_af29db9c5f1188fad2a96ff191ee9c8f2}} 
+Text {\bfseries level}
+\item 
+\mbox{\Hypertarget{class_location_service_a087165fc3945e120e7bdf17122e859ed}\label{class_location_service_a087165fc3945e120e7bdf17122e859ed}} 
+int {\bfseries needed\+Score}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_location_service_ae90ec01f9de110bf7f3f04ca551de513}\label{class_location_service_ae90ec01f9de110bf7f3f04ca551de513}} 
+static int {\bfseries level\+Difficulty}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+returns current location data of the device (coordinates in latitude, longitude and timestamp) 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_location_service_a048e4f71066ccc5b866801fd8ee79a92}\label{class_location_service_a048e4f71066ccc5b866801fd8ee79a92}} 
+\index{LocationService@{LocationService}!GetDailyTotal@{GetDailyTotal}}
+\index{GetDailyTotal@{GetDailyTotal}!LocationService@{LocationService}}
+\doxysubsubsection{\texorpdfstring{GetDailyTotal()}{GetDailyTotal()}}
+{\footnotesize\ttfamily double Location\+Service.\+Get\+Daily\+Total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get\+Day\+Time\+Hours method. 
+
+calculates sum of usful daily hourssunny = 100 -\/ current cloud percentage\mbox{\Hypertarget{class_location_service_af2e5c29dd6af65c72c66bdb2ab9ddc5c}\label{class_location_service_af2e5c29dd6af65c72c66bdb2ab9ddc5c}} 
+\index{LocationService@{LocationService}!SendWeatherRequest@{SendWeatherRequest}}
+\index{SendWeatherRequest@{SendWeatherRequest}!LocationService@{LocationService}}
+\doxysubsubsection{\texorpdfstring{SendWeatherRequest()}{SendWeatherRequest()}}
+{\footnotesize\ttfamily void Location\+Service.\+Send\+Weather\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets device location (coordinates) if user permitted 
+
+\mbox{\Hypertarget{class_location_service_a5a3efa9a08527b833003f7bc6991ffe1}\label{class_location_service_a5a3efa9a08527b833003f7bc6991ffe1}} 
+\index{LocationService@{LocationService}!SetLevelDifficulty@{SetLevelDifficulty}}
+\index{SetLevelDifficulty@{SetLevelDifficulty}!LocationService@{LocationService}}
+\doxysubsubsection{\texorpdfstring{SetLevelDifficulty()}{SetLevelDifficulty()}}
+{\footnotesize\ttfamily void Location\+Service.\+Set\+Level\+Difficulty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+chooses level difficulty according to weather data 
+
+\mbox{\Hypertarget{class_location_service_afa628c6d4bdcd83b7b8c945f4fdb1aa9}\label{class_location_service_afa628c6d4bdcd83b7b8c945f4fdb1aa9}} 
+\index{LocationService@{LocationService}!SetNeededScore@{SetNeededScore}}
+\index{SetNeededScore@{SetNeededScore}!LocationService@{LocationService}}
+\doxysubsubsection{\texorpdfstring{SetNeededScore()}{SetNeededScore()}}
+{\footnotesize\ttfamily void Location\+Service.\+Set\+Needed\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set\+Level\+Difficulty method. 
+
+chooses score needed to complete level\mbox{\Hypertarget{class_location_service_a69335087ca053e0e3a90a8e85d2a2bf0}\label{class_location_service_a69335087ca053e0e3a90a8e85d2a2bf0}} 
+\index{LocationService@{LocationService}!SetUpBoard@{SetUpBoard}}
+\index{SetUpBoard@{SetUpBoard}!LocationService@{LocationService}}
+\doxysubsubsection{\texorpdfstring{SetUpBoard()}{SetUpBoard()}}
+{\footnotesize\ttfamily void Location\+Service.\+Set\+Up\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+sets up game board 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anna/\+Desktop/\+Energy-\/\+Racer-\/google\+Play/\+Assets/\+Scripts/Location\+Service.\+cs\end{DoxyCompactItemize}

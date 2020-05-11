@@ -1,0 +1,635 @@
+\hypertarget{class_board}{}\doxysection{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+handles the game board  
+
+
+Inheritance diagram for Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_board}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_board_aa9aedcd0ef405a5b58fd2388cef7b849}{Update}} ()
+\begin{DoxyCompactList}\small\item\em set level difficulty, display remaining moves \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_a01eba148fba5c0b988229851a9e36be4}\label{class_board_a01eba148fba5c0b988229851a9e36be4}} 
+int {\bfseries Get\+Level} ()
+\item 
+void \mbox{\hyperlink{class_board_aff41b3db8a337f7ab43393c7e5e5ddc8}{Setup}} (int board\+Height, int board\+Width, int start\+Moves, int score\+To\+Reach, int \+\_\+level)
+\begin{DoxyCompactList}\small\item\em update needed score, moves, and set current score to 0. check if upgrade is activated fill the game board with dots \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a8de8ee2f28e463f5d862cd5b494626a6}{Destroy\+Matches}} ()
+\begin{DoxyCompactList}\small\item\em destroys all matches on board check for win \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_aba9ba53c46f67c1c0b914a1347230f17}\label{class_board_aba9ba53c46f67c1c0b914a1347230f17}} 
+void {\bfseries switch\+Players} ()
+\item 
+void \mbox{\hyperlink{class_board_a1137e2b8023d5524523d8a622e818087}{Check\+Game\+Over}} ()
+\begin{DoxyCompactList}\small\item\em checks if user lost \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a337139b933a6dc88a1acfae10be566a0}{update\+Coins}} ()
+\begin{DoxyCompactList}\small\item\em manages coins \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_board_a2f9e52c8f83e21be433bb3a323834595}{width}}
+\begin{DoxyCompactList}\small\item\em the board\textquotesingle{}s width \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_adbbf79735f96938460ee9bd4056ced62}{height}}
+\begin{DoxyCompactList}\small\item\em the board\textquotesingle{}s height \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a75af93350c512e042281a9faa863aa3b}{offset}}
+\begin{DoxyCompactList}\small\item\em the offset used for calculating a tile\textquotesingle{}s position \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_board_aaed86ec1921db2e3e3db2229269d531d}{tile\+Prefab}}
+\begin{DoxyCompactList}\small\item\em the prefab for each tile \end{DoxyCompactList}\item 
+Game\+Object\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_board_a014bcadf12bed6eb69d4d24497b05c2e}{dots}}
+\begin{DoxyCompactList}\small\item\em an array of all available dots \end{DoxyCompactList}\item 
+Game\+Object\mbox{[},\mbox{]} \mbox{\hyperlink{class_board_a46bee7adf9ab15d8c82e9d0348941eda}{all\+Dots}}
+\begin{DoxyCompactList}\small\item\em an array displaying the gameboard layout \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a5f8535cdb61686f4fa69ccfbc97e3847}{needed\+Score}}
+\begin{DoxyCompactList}\small\item\em the score needed to win \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_board_af030988990c60bc31d7e0d7ff464ab0d}{owned\+Coins\+Text}}
+\begin{DoxyCompactList}\small\item\em text fields displaying the owned coins \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_board_ad3d7dbd0266c4b863eb6de466a7de0cc}{moves\+Text}}
+\begin{DoxyCompactList}\small\item\em a text field displaying the number of remaining moves \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_board_a8c574db2307973ca1d002ca650a31812}{needed\+Score\+Text}}
+\begin{DoxyCompactList}\small\item\em a text field displaying the needed score to win \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_a167e053f7578bce0206af1677c758bdf}{game\+Over}}
+\begin{DoxyCompactList}\small\item\em whether the user has lost the game \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_ad841ef860dbf437d388c85966f4d9ec1}{game\+Won}}
+\begin{DoxyCompactList}\small\item\em whether the user has won the game \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{class_board_a923cd13ce802bbc2dd97ec247a0636fc}{slider}}
+\begin{DoxyCompactList}\small\item\em the slider that keeps track of the user\textquotesingle{}s score \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_board_a1992451f05b30f459fe56ee813cafb57}{player\+Name}}
+\begin{DoxyCompactList}\small\item\em a text field containing the player\textquotesingle{}s name \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_aa38846eb90ca93fe3c740bd2b155bbf5}{clouds}}
+\begin{DoxyCompactList}\small\item\em the amount of clouds \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_board_a4e06aacaeb6b482c3284c42bcd9993c0}{city}}
+\begin{DoxyCompactList}\small\item\em the city\textquotesingle{}s name \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_board_a8c4e23518cd5c3bb097f31a40734f215}{hours\+In\+A\+Day}}
+\begin{DoxyCompactList}\small\item\em the number of hours in the day \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_board_abf36940b526c4e84b44e78d88255d689}{Clouds}}
+\begin{DoxyCompactList}\small\item\em the amount of clouds \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ada945876e8642141da006d8fafcffa4a}{level}}
+\begin{DoxyCompactList}\small\item\em the current level\textquotesingle{}s number \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_board_ac316c3df3217cc77666c34b18e24a177}{location}}
+\begin{DoxyCompactList}\small\item\em a text field displaying the town name \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_car}{Car}} \mbox{\hyperlink{class_board_a6b32c08f36ab3c43a7e3825a2bd5ed76}{active\+Car}}
+\begin{DoxyCompactList}\small\item\em the active car \end{DoxyCompactList}\item 
+Image \mbox{\hyperlink{class_board_afce5094ae0e9fc5c31397bb7563dbf06}{bonus\+Move\+Img}}
+\begin{DoxyCompactList}\small\item\em the image displaying the number of bonus moves \end{DoxyCompactList}\item 
+Sprite \mbox{\hyperlink{class_board_aba5e7fa67866dcfde19512e348485319}{car\+Img}}
+\begin{DoxyCompactList}\small\item\em the car\textquotesingle{}s image for the slider \end{DoxyCompactList}\item 
+Sprite \mbox{\hyperlink{class_board_a96750c3fbc83adf43d489c0c7428ab79}{local\+Car}}
+\begin{DoxyCompactList}\small\item\em the images for the local and opponent\textquotesingle{}s car \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_board_a68a49d7f1034f2b7f6262a8eaa5b0b79}{cur\+Player\+Text}}
+\begin{DoxyCompactList}\small\item\em the text field displaying whose turn it is \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{class_board_a2c957697d1c598b425b2cf1ea9848599}{player2\+Slider}}
+\begin{DoxyCompactList}\small\item\em the slider that keeps track of player 2\textquotesingle{}s score \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_board_ae09d43d5761ff2a507a5a9655a129a25}{player2\+Name}}
+\begin{DoxyCompactList}\small\item\em a text field displaying player 2\textquotesingle{}s name \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_board_a54d4d9ac5e3679fd887eb49deb4736f4}{winner}}
+\begin{DoxyCompactList}\small\item\em the name of the winner \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_board_a35bf264a30043cdf1f0e3fda9b35e20b}{player\+Nickname}}
+\begin{DoxyCompactList}\small\item\em the text field displaying the player\textquotesingle{}s nickname \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_board_a2d36ff3efa40693a0f02038fd2db819a}{cur\+Score}}
+\begin{DoxyCompactList}\small\item\em the current score \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_board_a535748dd7af6a6ff18ce089798bda73a}{remaining\+Moves}}
+\begin{DoxyCompactList}\small\item\em the number of moves remaining \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_car}{Car}} \mbox{\hyperlink{class_board_a25294bd0d61625dba68bbb87f1d5db99}{car}}
+\begin{DoxyCompactList}\small\item\em the car in use \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_upgrade}{Upgrade}} \mbox{\hyperlink{class_board_ac8e7f29e049481debb50556ba93d6650}{upgrade}}
+\begin{DoxyCompactList}\small\item\em the upgrade in use \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_board_a629f9962d3570fbf79b689fc99190880}{starting\+Moves}}
+\begin{DoxyCompactList}\small\item\em the number of moves the player starts with \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_board_acbb28b2dddc865dd23437d285c10b6d4}{earned\+Coins}}
+\begin{DoxyCompactList}\small\item\em the number of coins earned \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_board_a03b98d6929e6c6676adcc7f4161e6791}{cur\+Distr}}
+\begin{DoxyCompactList}\small\item\em the number of the town \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_board_a806237c0572ffe7200f5b0441cc07437}{is\+Multiplayer}}
+\begin{DoxyCompactList}\small\item\em whether the game is in local multiplayer mode \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_board_afd657d96b70dd74ea069d79bbe278092}{is\+Online\+Multiplayer}}
+\begin{DoxyCompactList}\small\item\em whether the game is in online multiplayer mode \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_board_a7037dc4d94ad6e89bf195a6891f44683}{cur\+Player}}
+\begin{DoxyCompactList}\small\item\em the player whose turn it is \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_board_aa21c7a697bd9e5c36762b1b813ab8080}{cur\+Player2\+Score}}
+\begin{DoxyCompactList}\small\item\em the current score of player 2 \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_board_a279347850ec28160d6d02a09ae912d8b}{player1\+Nickname}}
+\begin{DoxyCompactList}\small\item\em player 1\textquotesingle{}s nickname \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_board_aa2caa9ef0e919f2a34c96b57b52a287f}{player2\+Nickname}}
+\begin{DoxyCompactList}\small\item\em player 2\textquotesingle{}s nickname \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+handles the game board 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_a1137e2b8023d5524523d8a622e818087}\label{class_board_a1137e2b8023d5524523d8a622e818087}} 
+\index{Board@{Board}!CheckGameOver@{CheckGameOver}}
+\index{CheckGameOver@{CheckGameOver}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{CheckGameOver()}{CheckGameOver()}}
+{\footnotesize\ttfamily void Board.\+Check\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+checks if user lost 
+
+\mbox{\Hypertarget{class_board_a8de8ee2f28e463f5d862cd5b494626a6}\label{class_board_a8de8ee2f28e463f5d862cd5b494626a6}} 
+\index{Board@{Board}!DestroyMatches@{DestroyMatches}}
+\index{DestroyMatches@{DestroyMatches}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{DestroyMatches()}{DestroyMatches()}}
+{\footnotesize\ttfamily void Board.\+Destroy\+Matches (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destroys all matches on board check for win 
+
+\mbox{\Hypertarget{class_board_aff41b3db8a337f7ab43393c7e5e5ddc8}\label{class_board_aff41b3db8a337f7ab43393c7e5e5ddc8}} 
+\index{Board@{Board}!Setup@{Setup}}
+\index{Setup@{Setup}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily void Board.\+Setup (\begin{DoxyParamCaption}\item[{int}]{board\+Height,  }\item[{int}]{board\+Width,  }\item[{int}]{start\+Moves,  }\item[{int}]{score\+To\+Reach,  }\item[{int}]{\+\_\+level }\end{DoxyParamCaption})}
+
+
+
+update needed score, moves, and set current score to 0. check if upgrade is activated fill the game board with dots 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+Height} & \\
+\hline
+\end{DoxyParams}
+the game board height 
+\begin{DoxyParams}{Parameters}
+{\em board\+Width} & \\
+\hline
+\end{DoxyParams}
+the game board width 
+\begin{DoxyParams}{Parameters}
+{\em start\+Moves} & \\
+\hline
+\end{DoxyParams}
+the moves 
+\begin{DoxyParams}{Parameters}
+{\em score\+To\+Reach} & \\
+\hline
+\end{DoxyParams}
+needed score to win 
+\begin{DoxyParams}{Parameters}
+{\em level} & \\
+\hline
+\end{DoxyParams}
+~\newline
+ Setup happens at the end of \mbox{\hyperlink{class_location_service}{Location\+Service}} Coroutine\mbox{\Hypertarget{class_board_aa9aedcd0ef405a5b58fd2388cef7b849}\label{class_board_aa9aedcd0ef405a5b58fd2388cef7b849}} 
+\index{Board@{Board}!Update@{Update}}
+\index{Update@{Update}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Board.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set level difficulty, display remaining moves 
+
+Update is called once per frame\mbox{\Hypertarget{class_board_a337139b933a6dc88a1acfae10be566a0}\label{class_board_a337139b933a6dc88a1acfae10be566a0}} 
+\index{Board@{Board}!updateCoins@{updateCoins}}
+\index{updateCoins@{updateCoins}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{updateCoins()}{updateCoins()}}
+{\footnotesize\ttfamily void Board.\+update\+Coins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+manages coins 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_board_a6b32c08f36ab3c43a7e3825a2bd5ed76}\label{class_board_a6b32c08f36ab3c43a7e3825a2bd5ed76}} 
+\index{Board@{Board}!activeCar@{activeCar}}
+\index{activeCar@{activeCar}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{activeCar}{activeCar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car}{Car}} Board.\+active\+Car}
+
+
+
+the active car 
+
+\mbox{\Hypertarget{class_board_a46bee7adf9ab15d8c82e9d0348941eda}\label{class_board_a46bee7adf9ab15d8c82e9d0348941eda}} 
+\index{Board@{Board}!allDots@{allDots}}
+\index{allDots@{allDots}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{allDots}{allDots}}
+{\footnotesize\ttfamily Game\+Object \mbox{[},\mbox{]} Board.\+all\+Dots}
+
+
+
+an array displaying the gameboard layout 
+
+\mbox{\Hypertarget{class_board_afce5094ae0e9fc5c31397bb7563dbf06}\label{class_board_afce5094ae0e9fc5c31397bb7563dbf06}} 
+\index{Board@{Board}!bonusMoveImg@{bonusMoveImg}}
+\index{bonusMoveImg@{bonusMoveImg}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{bonusMoveImg}{bonusMoveImg}}
+{\footnotesize\ttfamily Image Board.\+bonus\+Move\+Img}
+
+
+
+the image displaying the number of bonus moves 
+
+\mbox{\Hypertarget{class_board_a25294bd0d61625dba68bbb87f1d5db99}\label{class_board_a25294bd0d61625dba68bbb87f1d5db99}} 
+\index{Board@{Board}!car@{car}}
+\index{car@{car}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{car}{car}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car}{Car}} Board.\+car\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the car in use 
+
+\mbox{\Hypertarget{class_board_aba5e7fa67866dcfde19512e348485319}\label{class_board_aba5e7fa67866dcfde19512e348485319}} 
+\index{Board@{Board}!carImg@{carImg}}
+\index{carImg@{carImg}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{carImg}{carImg}}
+{\footnotesize\ttfamily Sprite Board.\+car\+Img}
+
+
+
+the car\textquotesingle{}s image for the slider 
+
+\mbox{\Hypertarget{class_board_a4e06aacaeb6b482c3284c42bcd9993c0}\label{class_board_a4e06aacaeb6b482c3284c42bcd9993c0}} 
+\index{Board@{Board}!city@{city}}
+\index{city@{city}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{city}{city}}
+{\footnotesize\ttfamily string Board.\+city}
+
+
+
+the city\textquotesingle{}s name 
+
+\mbox{\Hypertarget{class_board_aa38846eb90ca93fe3c740bd2b155bbf5}\label{class_board_aa38846eb90ca93fe3c740bd2b155bbf5}} 
+\index{Board@{Board}!clouds@{clouds}}
+\index{clouds@{clouds}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{clouds}{clouds}}
+{\footnotesize\ttfamily int Board.\+clouds}
+
+
+
+the amount of clouds 
+
+\mbox{\Hypertarget{class_board_abf36940b526c4e84b44e78d88255d689}\label{class_board_abf36940b526c4e84b44e78d88255d689}} 
+\index{Board@{Board}!Clouds@{Clouds}}
+\index{Clouds@{Clouds}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Clouds}{Clouds}}
+{\footnotesize\ttfamily double Board.\+Clouds}
+
+
+
+the amount of clouds 
+
+\mbox{\Hypertarget{class_board_a03b98d6929e6c6676adcc7f4161e6791}\label{class_board_a03b98d6929e6c6676adcc7f4161e6791}} 
+\index{Board@{Board}!curDistr@{curDistr}}
+\index{curDistr@{curDistr}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{curDistr}{curDistr}}
+{\footnotesize\ttfamily int Board.\+cur\+Distr\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the number of the town 
+
+\mbox{\Hypertarget{class_board_a7037dc4d94ad6e89bf195a6891f44683}\label{class_board_a7037dc4d94ad6e89bf195a6891f44683}} 
+\index{Board@{Board}!curPlayer@{curPlayer}}
+\index{curPlayer@{curPlayer}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{curPlayer}{curPlayer}}
+{\footnotesize\ttfamily string Board.\+cur\+Player\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the player whose turn it is 
+
+\mbox{\Hypertarget{class_board_aa21c7a697bd9e5c36762b1b813ab8080}\label{class_board_aa21c7a697bd9e5c36762b1b813ab8080}} 
+\index{Board@{Board}!curPlayer2Score@{curPlayer2Score}}
+\index{curPlayer2Score@{curPlayer2Score}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{curPlayer2Score}{curPlayer2Score}}
+{\footnotesize\ttfamily int Board.\+cur\+Player2\+Score\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the current score of player 2 
+
+\mbox{\Hypertarget{class_board_a68a49d7f1034f2b7f6262a8eaa5b0b79}\label{class_board_a68a49d7f1034f2b7f6262a8eaa5b0b79}} 
+\index{Board@{Board}!curPlayerText@{curPlayerText}}
+\index{curPlayerText@{curPlayerText}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{curPlayerText}{curPlayerText}}
+{\footnotesize\ttfamily Text Board.\+cur\+Player\+Text}
+
+
+
+the text field displaying whose turn it is 
+
+\mbox{\Hypertarget{class_board_a2d36ff3efa40693a0f02038fd2db819a}\label{class_board_a2d36ff3efa40693a0f02038fd2db819a}} 
+\index{Board@{Board}!curScore@{curScore}}
+\index{curScore@{curScore}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{curScore}{curScore}}
+{\footnotesize\ttfamily int Board.\+cur\+Score\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the current score 
+
+\mbox{\Hypertarget{class_board_a014bcadf12bed6eb69d4d24497b05c2e}\label{class_board_a014bcadf12bed6eb69d4d24497b05c2e}} 
+\index{Board@{Board}!dots@{dots}}
+\index{dots@{dots}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{dots}{dots}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Board.\+dots}
+
+
+
+an array of all available dots 
+
+~\newline
+ \mbox{\Hypertarget{class_board_acbb28b2dddc865dd23437d285c10b6d4}\label{class_board_acbb28b2dddc865dd23437d285c10b6d4}} 
+\index{Board@{Board}!earnedCoins@{earnedCoins}}
+\index{earnedCoins@{earnedCoins}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{earnedCoins}{earnedCoins}}
+{\footnotesize\ttfamily int Board.\+earned\+Coins\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the number of coins earned 
+
+\mbox{\Hypertarget{class_board_a167e053f7578bce0206af1677c758bdf}\label{class_board_a167e053f7578bce0206af1677c758bdf}} 
+\index{Board@{Board}!gameOver@{gameOver}}
+\index{gameOver@{gameOver}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{gameOver}{gameOver}}
+{\footnotesize\ttfamily bool Board.\+game\+Over}
+
+
+
+whether the user has lost the game 
+
+\mbox{\Hypertarget{class_board_ad841ef860dbf437d388c85966f4d9ec1}\label{class_board_ad841ef860dbf437d388c85966f4d9ec1}} 
+\index{Board@{Board}!gameWon@{gameWon}}
+\index{gameWon@{gameWon}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{gameWon}{gameWon}}
+{\footnotesize\ttfamily bool Board.\+game\+Won}
+
+
+
+whether the user has won the game 
+
+\mbox{\Hypertarget{class_board_adbbf79735f96938460ee9bd4056ced62}\label{class_board_adbbf79735f96938460ee9bd4056ced62}} 
+\index{Board@{Board}!height@{height}}
+\index{height@{height}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Board.\+height}
+
+
+
+the board\textquotesingle{}s height 
+
+\mbox{\Hypertarget{class_board_a8c4e23518cd5c3bb097f31a40734f215}\label{class_board_a8c4e23518cd5c3bb097f31a40734f215}} 
+\index{Board@{Board}!hoursInADay@{hoursInADay}}
+\index{hoursInADay@{hoursInADay}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{hoursInADay}{hoursInADay}}
+{\footnotesize\ttfamily double Board.\+hours\+In\+A\+Day}
+
+
+
+the number of hours in the day 
+
+\mbox{\Hypertarget{class_board_a806237c0572ffe7200f5b0441cc07437}\label{class_board_a806237c0572ffe7200f5b0441cc07437}} 
+\index{Board@{Board}!isMultiplayer@{isMultiplayer}}
+\index{isMultiplayer@{isMultiplayer}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isMultiplayer}{isMultiplayer}}
+{\footnotesize\ttfamily bool Board.\+is\+Multiplayer\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+whether the game is in local multiplayer mode 
+
+\mbox{\Hypertarget{class_board_afd657d96b70dd74ea069d79bbe278092}\label{class_board_afd657d96b70dd74ea069d79bbe278092}} 
+\index{Board@{Board}!isOnlineMultiplayer@{isOnlineMultiplayer}}
+\index{isOnlineMultiplayer@{isOnlineMultiplayer}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isOnlineMultiplayer}{isOnlineMultiplayer}}
+{\footnotesize\ttfamily bool Board.\+is\+Online\+Multiplayer\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+whether the game is in online multiplayer mode 
+
+\mbox{\Hypertarget{class_board_ada945876e8642141da006d8fafcffa4a}\label{class_board_ada945876e8642141da006d8fafcffa4a}} 
+\index{Board@{Board}!level@{level}}
+\index{level@{level}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int Board.\+level}
+
+
+
+the current level\textquotesingle{}s number 
+
+\mbox{\Hypertarget{class_board_a96750c3fbc83adf43d489c0c7428ab79}\label{class_board_a96750c3fbc83adf43d489c0c7428ab79}} 
+\index{Board@{Board}!localCar@{localCar}}
+\index{localCar@{localCar}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{localCar}{localCar}}
+{\footnotesize\ttfamily Sprite Board.\+local\+Car}
+
+
+
+the images for the local and opponent\textquotesingle{}s car 
+
+\mbox{\Hypertarget{class_board_ac316c3df3217cc77666c34b18e24a177}\label{class_board_ac316c3df3217cc77666c34b18e24a177}} 
+\index{Board@{Board}!location@{location}}
+\index{location@{location}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily Text Board.\+location}
+
+
+
+a text field displaying the town name 
+
+\mbox{\Hypertarget{class_board_ad3d7dbd0266c4b863eb6de466a7de0cc}\label{class_board_ad3d7dbd0266c4b863eb6de466a7de0cc}} 
+\index{Board@{Board}!movesText@{movesText}}
+\index{movesText@{movesText}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{movesText}{movesText}}
+{\footnotesize\ttfamily Text Board.\+moves\+Text}
+
+
+
+a text field displaying the number of remaining moves 
+
+\mbox{\Hypertarget{class_board_a5f8535cdb61686f4fa69ccfbc97e3847}\label{class_board_a5f8535cdb61686f4fa69ccfbc97e3847}} 
+\index{Board@{Board}!neededScore@{neededScore}}
+\index{neededScore@{neededScore}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{neededScore}{neededScore}}
+{\footnotesize\ttfamily int Board.\+needed\+Score}
+
+
+
+the score needed to win 
+
+\mbox{\Hypertarget{class_board_a8c574db2307973ca1d002ca650a31812}\label{class_board_a8c574db2307973ca1d002ca650a31812}} 
+\index{Board@{Board}!neededScoreText@{neededScoreText}}
+\index{neededScoreText@{neededScoreText}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{neededScoreText}{neededScoreText}}
+{\footnotesize\ttfamily Text Board.\+needed\+Score\+Text}
+
+
+
+a text field displaying the needed score to win 
+
+\mbox{\Hypertarget{class_board_a75af93350c512e042281a9faa863aa3b}\label{class_board_a75af93350c512e042281a9faa863aa3b}} 
+\index{Board@{Board}!offset@{offset}}
+\index{offset@{offset}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily int Board.\+offset}
+
+
+
+the offset used for calculating a tile\textquotesingle{}s position 
+
+\mbox{\Hypertarget{class_board_af030988990c60bc31d7e0d7ff464ab0d}\label{class_board_af030988990c60bc31d7e0d7ff464ab0d}} 
+\index{Board@{Board}!ownedCoinsText@{ownedCoinsText}}
+\index{ownedCoinsText@{ownedCoinsText}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{ownedCoinsText}{ownedCoinsText}}
+{\footnotesize\ttfamily Text Board.\+owned\+Coins\+Text}
+
+
+
+text fields displaying the owned coins 
+
+\mbox{\Hypertarget{class_board_a279347850ec28160d6d02a09ae912d8b}\label{class_board_a279347850ec28160d6d02a09ae912d8b}} 
+\index{Board@{Board}!player1Nickname@{player1Nickname}}
+\index{player1Nickname@{player1Nickname}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{player1Nickname}{player1Nickname}}
+{\footnotesize\ttfamily string Board.\+player1\+Nickname\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+player 1\textquotesingle{}s nickname 
+
+\mbox{\Hypertarget{class_board_ae09d43d5761ff2a507a5a9655a129a25}\label{class_board_ae09d43d5761ff2a507a5a9655a129a25}} 
+\index{Board@{Board}!player2Name@{player2Name}}
+\index{player2Name@{player2Name}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{player2Name}{player2Name}}
+{\footnotesize\ttfamily Text Board.\+player2\+Name}
+
+
+
+a text field displaying player 2\textquotesingle{}s name 
+
+\mbox{\Hypertarget{class_board_aa2caa9ef0e919f2a34c96b57b52a287f}\label{class_board_aa2caa9ef0e919f2a34c96b57b52a287f}} 
+\index{Board@{Board}!player2Nickname@{player2Nickname}}
+\index{player2Nickname@{player2Nickname}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{player2Nickname}{player2Nickname}}
+{\footnotesize\ttfamily string Board.\+player2\+Nickname\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+player 2\textquotesingle{}s nickname 
+
+\mbox{\Hypertarget{class_board_a2c957697d1c598b425b2cf1ea9848599}\label{class_board_a2c957697d1c598b425b2cf1ea9848599}} 
+\index{Board@{Board}!player2Slider@{player2Slider}}
+\index{player2Slider@{player2Slider}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{player2Slider}{player2Slider}}
+{\footnotesize\ttfamily Slider Board.\+player2\+Slider}
+
+
+
+the slider that keeps track of player 2\textquotesingle{}s score 
+
+\mbox{\Hypertarget{class_board_a1992451f05b30f459fe56ee813cafb57}\label{class_board_a1992451f05b30f459fe56ee813cafb57}} 
+\index{Board@{Board}!playerName@{playerName}}
+\index{playerName@{playerName}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{playerName}{playerName}}
+{\footnotesize\ttfamily Text Board.\+player\+Name}
+
+
+
+a text field containing the player\textquotesingle{}s name 
+
+\mbox{\Hypertarget{class_board_a35bf264a30043cdf1f0e3fda9b35e20b}\label{class_board_a35bf264a30043cdf1f0e3fda9b35e20b}} 
+\index{Board@{Board}!playerNickname@{playerNickname}}
+\index{playerNickname@{playerNickname}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{playerNickname}{playerNickname}}
+{\footnotesize\ttfamily Text Board.\+player\+Nickname}
+
+
+
+the text field displaying the player\textquotesingle{}s nickname 
+
+\mbox{\Hypertarget{class_board_a535748dd7af6a6ff18ce089798bda73a}\label{class_board_a535748dd7af6a6ff18ce089798bda73a}} 
+\index{Board@{Board}!remainingMoves@{remainingMoves}}
+\index{remainingMoves@{remainingMoves}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{remainingMoves}{remainingMoves}}
+{\footnotesize\ttfamily int Board.\+remaining\+Moves\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the number of moves remaining 
+
+\mbox{\Hypertarget{class_board_a923cd13ce802bbc2dd97ec247a0636fc}\label{class_board_a923cd13ce802bbc2dd97ec247a0636fc}} 
+\index{Board@{Board}!slider@{slider}}
+\index{slider@{slider}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{slider}{slider}}
+{\footnotesize\ttfamily Slider Board.\+slider}
+
+
+
+the slider that keeps track of the user\textquotesingle{}s score 
+
+\mbox{\Hypertarget{class_board_a629f9962d3570fbf79b689fc99190880}\label{class_board_a629f9962d3570fbf79b689fc99190880}} 
+\index{Board@{Board}!startingMoves@{startingMoves}}
+\index{startingMoves@{startingMoves}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{startingMoves}{startingMoves}}
+{\footnotesize\ttfamily int Board.\+starting\+Moves\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the number of moves the player starts with 
+
+\mbox{\Hypertarget{class_board_aaed86ec1921db2e3e3db2229269d531d}\label{class_board_aaed86ec1921db2e3e3db2229269d531d}} 
+\index{Board@{Board}!tilePrefab@{tilePrefab}}
+\index{tilePrefab@{tilePrefab}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{tilePrefab}{tilePrefab}}
+{\footnotesize\ttfamily Game\+Object Board.\+tile\+Prefab}
+
+
+
+the prefab for each tile 
+
+\mbox{\Hypertarget{class_board_ac8e7f29e049481debb50556ba93d6650}\label{class_board_ac8e7f29e049481debb50556ba93d6650}} 
+\index{Board@{Board}!upgrade@{upgrade}}
+\index{upgrade@{upgrade}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{upgrade}{upgrade}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_upgrade}{Upgrade}} Board.\+upgrade\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the upgrade in use 
+
+\mbox{\Hypertarget{class_board_a2f9e52c8f83e21be433bb3a323834595}\label{class_board_a2f9e52c8f83e21be433bb3a323834595}} 
+\index{Board@{Board}!width@{width}}
+\index{width@{width}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Board.\+width}
+
+
+
+the board\textquotesingle{}s width 
+
+\mbox{\Hypertarget{class_board_a54d4d9ac5e3679fd887eb49deb4736f4}\label{class_board_a54d4d9ac5e3679fd887eb49deb4736f4}} 
+\index{Board@{Board}!winner@{winner}}
+\index{winner@{winner}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{winner}{winner}}
+{\footnotesize\ttfamily string Board.\+winner}
+
+
+
+the name of the winner 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anna/\+Desktop/\+Energy-\/\+Racer-\/google\+Play/\+Assets/\+Scripts/Board.\+cs\end{DoxyCompactItemize}

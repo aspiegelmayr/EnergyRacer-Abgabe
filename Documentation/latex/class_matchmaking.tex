@@ -1,0 +1,235 @@
+\hypertarget{class_matchmaking}{}\doxysection{Matchmaking Class Reference}
+\label{class_matchmaking}\index{Matchmaking@{Matchmaking}}
+
+
+handles the lobby creation and management for online multiplayer games  
+
+
+Inheritance diagram for Matchmaking\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_matchmaking}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_matchmaking_a4adfbad771b08159f43aff91e4b5aaa9}{Search\+For\+Match}} ()
+\begin{DoxyCompactList}\small\item\em checks if lobby is opensets role \& guest name, sets the game\textquotesingle{}s is\+Open property to false \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matchmaking_ace085309a9af3afd8c6631e35dc97caf}{Back\+Button\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em is called when the user presses the back button \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matchmaking_a8e96647a70ed3ec3a02b7dccaccb2b34}{Return\+To\+Menu}} (bool ret)
+\begin{DoxyCompactList}\small\item\em delete the entry with match ID from database if returning to menu, otherwise hides the warning panel again \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matchmaking_a255df20bcdaf325fcfb6f2678259e3c3}{Is\+Valid\+Lobby\+Name}} ()
+\begin{DoxyCompactList}\small\item\em checks if a lobby with the name match ID already exists \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text \mbox{\hyperlink{class_matchmaking_af00f350b921d6f11ea6c31c733cf3524}{match\+Title}}
+\begin{DoxyCompactList}\small\item\em a text field for displaying the lobby\textquotesingle{}s name \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_matchmaking_a0b6235cf9516c3835259ed3feae2425e}{match\+Details}}
+\begin{DoxyCompactList}\small\item\em a text field for displaying the lobby details \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_matchmaking_ac715f057314ea102d9a81abfb6cc9258}{not\+Found\+Text}}
+\begin{DoxyCompactList}\small\item\em text fields for displaying possible errors \end{DoxyCompactList}\item 
+Input\+Field \mbox{\hyperlink{class_matchmaking_a7afcb2f27eb96bc82408a8846e59fcd0}{match\+I\+D\+Input}}
+\begin{DoxyCompactList}\small\item\em input fields for match ID and nickname \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{class_matchmaking_ab1d8633a508d312e182a4f4e2a3a3898}{host\+Btn}}
+\begin{DoxyCompactList}\small\item\em the buttons for hosting/joining a game \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_matchmaking_ac11cd086ed8d0d8e548cfee193b743e3}{warning\+Panel}}
+\begin{DoxyCompactList}\small\item\em a panel containing a warning when the player is about to leave this screen \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{class_matchmaking_ae7ef8ba0e633191f95afff386d041160}{yes\+Btn}}
+\begin{DoxyCompactList}\small\item\em the yes/no buttons within the warning panel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_matchmaking_a9e50750bbab96a6649f1e432638b7ef5}{match\+ID}}
+\begin{DoxyCompactList}\small\item\em the match\textquotesingle{}s ID \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_matchmaking_a42edcd2e2c4115fd64f038dc17176320}{host\+Name}}
+\begin{DoxyCompactList}\small\item\em the name of the player hosting the game \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_matchmaking_a8df650906a02c0f2d75bd340645f556b}{guest\+Name}}
+\begin{DoxyCompactList}\small\item\em the name of the player who joined the game \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_matchmaking_a73e4c8acf62e6515a1fb3355cfae2716}{role}}
+\begin{DoxyCompactList}\small\item\em the local player\textquotesingle{}s role (host/guest) \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_matchmaking_adcb4b6f447693ee0f03ce5b5e83d0df1}{level}}
+\begin{DoxyCompactList}\small\item\em the level the host chose \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+handles the lobby creation and management for online multiplayer games 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matchmaking_ace085309a9af3afd8c6631e35dc97caf}\label{class_matchmaking_ace085309a9af3afd8c6631e35dc97caf}} 
+\index{Matchmaking@{Matchmaking}!BackButtonPressed@{BackButtonPressed}}
+\index{BackButtonPressed@{BackButtonPressed}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{BackButtonPressed()}{BackButtonPressed()}}
+{\footnotesize\ttfamily void Matchmaking.\+Back\+Button\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+is called when the user presses the back button 
+
+\mbox{\Hypertarget{class_matchmaking_a255df20bcdaf325fcfb6f2678259e3c3}\label{class_matchmaking_a255df20bcdaf325fcfb6f2678259e3c3}} 
+\index{Matchmaking@{Matchmaking}!IsValidLobbyName@{IsValidLobbyName}}
+\index{IsValidLobbyName@{IsValidLobbyName}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{IsValidLobbyName()}{IsValidLobbyName()}}
+{\footnotesize\ttfamily void Matchmaking.\+Is\+Valid\+Lobby\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+checks if a lobby with the name match ID already exists 
+
+\mbox{\Hypertarget{class_matchmaking_a8e96647a70ed3ec3a02b7dccaccb2b34}\label{class_matchmaking_a8e96647a70ed3ec3a02b7dccaccb2b34}} 
+\index{Matchmaking@{Matchmaking}!ReturnToMenu@{ReturnToMenu}}
+\index{ReturnToMenu@{ReturnToMenu}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{ReturnToMenu()}{ReturnToMenu()}}
+{\footnotesize\ttfamily void Matchmaking.\+Return\+To\+Menu (\begin{DoxyParamCaption}\item[{bool}]{ret }\end{DoxyParamCaption})}
+
+
+
+delete the entry with match ID from database if returning to menu, otherwise hides the warning panel again 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ret} & whether the player confirmed the choice to return or not\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matchmaking_a4adfbad771b08159f43aff91e4b5aaa9}\label{class_matchmaking_a4adfbad771b08159f43aff91e4b5aaa9}} 
+\index{Matchmaking@{Matchmaking}!SearchForMatch@{SearchForMatch}}
+\index{SearchForMatch@{SearchForMatch}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{SearchForMatch()}{SearchForMatch()}}
+{\footnotesize\ttfamily void Matchmaking.\+Search\+For\+Match (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+checks if lobby is opensets role \& guest name, sets the game\textquotesingle{}s is\+Open property to false 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_matchmaking_a8df650906a02c0f2d75bd340645f556b}\label{class_matchmaking_a8df650906a02c0f2d75bd340645f556b}} 
+\index{Matchmaking@{Matchmaking}!guestName@{guestName}}
+\index{guestName@{guestName}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{guestName}{guestName}}
+{\footnotesize\ttfamily string Matchmaking.\+guest\+Name\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the name of the player who joined the game 
+
+\mbox{\Hypertarget{class_matchmaking_ab1d8633a508d312e182a4f4e2a3a3898}\label{class_matchmaking_ab1d8633a508d312e182a4f4e2a3a3898}} 
+\index{Matchmaking@{Matchmaking}!hostBtn@{hostBtn}}
+\index{hostBtn@{hostBtn}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{hostBtn}{hostBtn}}
+{\footnotesize\ttfamily Button Matchmaking.\+host\+Btn}
+
+
+
+the buttons for hosting/joining a game 
+
+\mbox{\Hypertarget{class_matchmaking_a42edcd2e2c4115fd64f038dc17176320}\label{class_matchmaking_a42edcd2e2c4115fd64f038dc17176320}} 
+\index{Matchmaking@{Matchmaking}!hostName@{hostName}}
+\index{hostName@{hostName}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{hostName}{hostName}}
+{\footnotesize\ttfamily string Matchmaking.\+host\+Name\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the name of the player hosting the game 
+
+\mbox{\Hypertarget{class_matchmaking_adcb4b6f447693ee0f03ce5b5e83d0df1}\label{class_matchmaking_adcb4b6f447693ee0f03ce5b5e83d0df1}} 
+\index{Matchmaking@{Matchmaking}!level@{level}}
+\index{level@{level}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int Matchmaking.\+level\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the level the host chose 
+
+\mbox{\Hypertarget{class_matchmaking_a0b6235cf9516c3835259ed3feae2425e}\label{class_matchmaking_a0b6235cf9516c3835259ed3feae2425e}} 
+\index{Matchmaking@{Matchmaking}!matchDetails@{matchDetails}}
+\index{matchDetails@{matchDetails}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{matchDetails}{matchDetails}}
+{\footnotesize\ttfamily Text Matchmaking.\+match\+Details}
+
+
+
+a text field for displaying the lobby details 
+
+\mbox{\Hypertarget{class_matchmaking_a9e50750bbab96a6649f1e432638b7ef5}\label{class_matchmaking_a9e50750bbab96a6649f1e432638b7ef5}} 
+\index{Matchmaking@{Matchmaking}!matchID@{matchID}}
+\index{matchID@{matchID}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{matchID}{matchID}}
+{\footnotesize\ttfamily string Matchmaking.\+match\+ID\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the match\textquotesingle{}s ID 
+
+\mbox{\Hypertarget{class_matchmaking_a7afcb2f27eb96bc82408a8846e59fcd0}\label{class_matchmaking_a7afcb2f27eb96bc82408a8846e59fcd0}} 
+\index{Matchmaking@{Matchmaking}!matchIDInput@{matchIDInput}}
+\index{matchIDInput@{matchIDInput}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{matchIDInput}{matchIDInput}}
+{\footnotesize\ttfamily Input\+Field Matchmaking.\+match\+I\+D\+Input}
+
+
+
+input fields for match ID and nickname 
+
+\mbox{\Hypertarget{class_matchmaking_af00f350b921d6f11ea6c31c733cf3524}\label{class_matchmaking_af00f350b921d6f11ea6c31c733cf3524}} 
+\index{Matchmaking@{Matchmaking}!matchTitle@{matchTitle}}
+\index{matchTitle@{matchTitle}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{matchTitle}{matchTitle}}
+{\footnotesize\ttfamily Text Matchmaking.\+match\+Title}
+
+
+
+a text field for displaying the lobby\textquotesingle{}s name 
+
+\mbox{\Hypertarget{class_matchmaking_ac715f057314ea102d9a81abfb6cc9258}\label{class_matchmaking_ac715f057314ea102d9a81abfb6cc9258}} 
+\index{Matchmaking@{Matchmaking}!notFoundText@{notFoundText}}
+\index{notFoundText@{notFoundText}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{notFoundText}{notFoundText}}
+{\footnotesize\ttfamily Text Matchmaking.\+not\+Found\+Text}
+
+
+
+text fields for displaying possible errors 
+
+\mbox{\Hypertarget{class_matchmaking_a73e4c8acf62e6515a1fb3355cfae2716}\label{class_matchmaking_a73e4c8acf62e6515a1fb3355cfae2716}} 
+\index{Matchmaking@{Matchmaking}!role@{role}}
+\index{role@{role}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{role}{role}}
+{\footnotesize\ttfamily string Matchmaking.\+role\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the local player\textquotesingle{}s role (host/guest) 
+
+\mbox{\Hypertarget{class_matchmaking_ac11cd086ed8d0d8e548cfee193b743e3}\label{class_matchmaking_ac11cd086ed8d0d8e548cfee193b743e3}} 
+\index{Matchmaking@{Matchmaking}!warningPanel@{warningPanel}}
+\index{warningPanel@{warningPanel}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{warningPanel}{warningPanel}}
+{\footnotesize\ttfamily Game\+Object Matchmaking.\+warning\+Panel}
+
+
+
+a panel containing a warning when the player is about to leave this screen 
+
+\mbox{\Hypertarget{class_matchmaking_ae7ef8ba0e633191f95afff386d041160}\label{class_matchmaking_ae7ef8ba0e633191f95afff386d041160}} 
+\index{Matchmaking@{Matchmaking}!yesBtn@{yesBtn}}
+\index{yesBtn@{yesBtn}!Matchmaking@{Matchmaking}}
+\doxysubsubsection{\texorpdfstring{yesBtn}{yesBtn}}
+{\footnotesize\ttfamily Button Matchmaking.\+yes\+Btn}
+
+
+
+the yes/no buttons within the warning panel 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/anna/\+Desktop/\+Energy-\/\+Racer-\/google\+Play/\+Assets/\+Scripts/Matchmaking.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{_dot_8cs}{}\doxysection{/\+Users/anna/\+Documents/\+Energy\+Racer-\/\+Abgabe/\+Assets/\+Scripts/\+Dot.cs File Reference}
+\label{_dot_8cs}\index{/Users/anna/Documents/EnergyRacer-\/Abgabe/Assets/Scripts/Dot.cs@{/Users/anna/Documents/EnergyRacer-\/Abgabe/Assets/Scripts/Dot.cs}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_dot_8cs_a961c98fd0056dc954131538319ac9002}{\mbox{[}instance initializer\mbox{]}}}
+\begin{DoxyCompactList}\small\item\em manages all dots \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_dot_8cs_a7e520fd2a08e6c2cda7a69aa143da063}{Get\+Swipe\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em gets end point of swipe \end{DoxyCompactList}\item 
+  \mbox{\hyperlink{_dot_8cs_af8ab68399e8aedcc1da8a20873e5c168}{if}} (swipe $>$ -\/45 \&\&swipe$<$=45 \&\&col$<$ board.\+width -\/ 1)
+\begin{DoxyCompactList}\small\item\em swaps 2 adjacent pieces, updates move counter \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_dot_8cs_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{_dot_8cs_aaffee946d1b917479fc0b7daeb57c769}{if}} ((swipe $>$ 135$\vert$$\vert$swipe$<$=-\/135) \&\&col $>$ 0)
+\item 
+\mbox{\hyperlink{_dot_8cs_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{_dot_8cs_a270a7a8749c8dbf3aa4828e8dee7efd7}{if}} (swipe$<$ -\/45 \&\&swipe $>$=-\/135 \&\&row $>$ 0)
+\item 
+\mbox{\hyperlink{_dot_8cs_a8ff677e392e73a22853b3b176bb8d8b7}{if}} (!\mbox{\hyperlink{class_board_afd657d96b70dd74ea069d79bbe278092}{Board.\+is\+Online\+Multiplayer}})
+\item 
+\mbox{\hyperlink{_dot_8cs_a5ae88d7d158501e7bc939c4d1b2abf7d}{if}} (\mbox{\hyperlink{class_board_a535748dd7af6a6ff18ce089798bda73a}{Board.\+remaining\+Moves}}==1)
+\item 
+\mbox{\hyperlink{_dot_8cs_aacdeabefae23e76d4cdfc198033383f5}{Start\+Coroutine}} (Check\+Move\+Co())
+\item 
+board. \mbox{\hyperlink{_dot_8cs_ad288c2a269b1f0cc7a11ed95c53374a8}{update\+Coins}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_dot_8cs_a0544c3fe466e421738dae463968b70ba}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_dot_8cs_a961c98fd0056dc954131538319ac9002}\label{_dot_8cs_a961c98fd0056dc954131538319ac9002}} 
+\index{Dot.cs@{Dot.cs}!\mbox{[}instance initializer\mbox{]}@{[instance initializer]}}
+\index{\mbox{[}instance initializer\mbox{]}@{[instance initializer]}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{[instance initializer]()}{[instance initializer]()}}
+{\footnotesize\ttfamily \mbox{[}instance initializer\mbox{]}}
+
+
+
+manages all dots 
+
+calculates the swipe angle
+
+ public class Dot \+: Mono\+Behaviour
+
+  void \mbox{\hyperlink{_dot_8cs_a7e520fd2a08e6c2cda7a69aa143da063}{Get\+Swipe\+Angle()}}  \{  if (Mathf.\+Abs(second\+Touch.\+y -\/ first\+Touch.\+y) $>$ swipe\+Resist $\vert$$\vert$ Mathf.\+Abs(second\+Touch.\+x -\/ first\+Touch.\+x) $>$ swipe\+Resist) angle  public int row;
+
+set position of dot 
+
+  void Start()
+
+finds matches, changes color of matched dots 
+
+  void Update()
+
+gets start point of swipe 
+
+  void On\+Mouse\+Down()  \{\mbox{\Hypertarget{_dot_8cs_a7e520fd2a08e6c2cda7a69aa143da063}\label{_dot_8cs_a7e520fd2a08e6c2cda7a69aa143da063}} 
+\index{Dot.cs@{Dot.cs}!GetSwipeAngle@{GetSwipeAngle}}
+\index{GetSwipeAngle@{GetSwipeAngle}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{GetSwipeAngle()}{GetSwipeAngle()}}
+{\footnotesize\ttfamily Get\+Swipe\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets end point of swipe 
+
+  private void On\+Mouse\+Up()  \{  second\+Touch = Camera.\+main.\+Screen\+To\+World\+Point(Input.\+mouse\+Position); \mbox{\Hypertarget{_dot_8cs_a8ff677e392e73a22853b3b176bb8d8b7}\label{_dot_8cs_a8ff677e392e73a22853b3b176bb8d8b7}} 
+\index{Dot.cs@{Dot.cs}!if@{if}}
+\index{if@{if}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{!Board.}]{is\+Online\+Multiplayer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_dot_8cs_aaffee946d1b917479fc0b7daeb57c769}\label{_dot_8cs_aaffee946d1b917479fc0b7daeb57c769}} 
+\index{Dot.cs@{Dot.cs}!if@{if}}
+\index{if@{if}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dot_8cs_a0544c3fe466e421738dae463968b70ba}{else}} if (\begin{DoxyParamCaption}\item[{(swipe $>$ 135$\vert$$\vert$swipe$<$=-\/135) \&\&}]{col,  }\item[{0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_dot_8cs_a5ae88d7d158501e7bc939c4d1b2abf7d}\label{_dot_8cs_a5ae88d7d158501e7bc939c4d1b2abf7d}} 
+\index{Dot.cs@{Dot.cs}!if@{if}}
+\index{if@{if}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{Board.}]{remaining\+Moves = {\ttfamily =~1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_dot_8cs_af8ab68399e8aedcc1da8a20873e5c168}\label{_dot_8cs_af8ab68399e8aedcc1da8a20873e5c168}} 
+\index{Dot.cs@{Dot.cs}!if@{if}}
+\index{if@{if}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dot_8cs_a0544c3fe466e421738dae463968b70ba}{else}} if (\begin{DoxyParamCaption}\item[{swipe}]{ }\end{DoxyParamCaption})}
+
+
+
+swaps 2 adjacent pieces, updates move counter 
+
+  void Swap\+Pieces()  \{ \mbox{\Hypertarget{_dot_8cs_a270a7a8749c8dbf3aa4828e8dee7efd7}\label{_dot_8cs_a270a7a8749c8dbf3aa4828e8dee7efd7}} 
+\index{Dot.cs@{Dot.cs}!if@{if}}
+\index{if@{if}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dot_8cs_a0544c3fe466e421738dae463968b70ba}{else}} if (\begin{DoxyParamCaption}\item[{swipe$<$ -\/45 \&\&swipe $>$}]{ = {\ttfamily -\/135~\&\&~row},  }\item[{0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_dot_8cs_aacdeabefae23e76d4cdfc198033383f5}\label{_dot_8cs_aacdeabefae23e76d4cdfc198033383f5}} 
+\index{Dot.cs@{Dot.cs}!StartCoroutine@{StartCoroutine}}
+\index{StartCoroutine@{StartCoroutine}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{StartCoroutine()}{StartCoroutine()}}
+{\footnotesize\ttfamily Start\+Coroutine (\begin{DoxyParamCaption}\item[{Check\+Move\+Co()}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_dot_8cs_ad288c2a269b1f0cc7a11ed95c53374a8}\label{_dot_8cs_ad288c2a269b1f0cc7a11ed95c53374a8}} 
+\index{Dot.cs@{Dot.cs}!updateCoins@{updateCoins}}
+\index{updateCoins@{updateCoins}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{updateCoins()}{updateCoins()}}
+{\footnotesize\ttfamily board. update\+Coins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_dot_8cs_a0544c3fe466e421738dae463968b70ba}\label{_dot_8cs_a0544c3fe466e421738dae463968b70ba}} 
+\index{Dot.cs@{Dot.cs}!else@{else}}
+\index{else@{else}!Dot.cs@{Dot.cs}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{            board.movesText.text = \mbox{\hyperlink{class_board}{Board}}.\mbox{\hyperlink{class_board_a535748dd7af6a6ff18ce089798bda73a}{remainingMoves}} + \textcolor{stringliteral}{" Moves übrig"}}
+
+\end{DoxyCode}
